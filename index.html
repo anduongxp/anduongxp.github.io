@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc Nghiệm Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">
+        <h2>Hệ thống thi trắc nghiệm</h2>
+    </div>
+    <div id="infoForm">
+        <h3>Nhập thông tin cá nhân</h3>
+        <p class="text">Họ và tên</p>
+        <input type="text" id="fullName" placeholder="Ví dụ: Nguyễn Văn A">
+        <p class="text">Ngày tháng năm sinh</p>
+        <input type="date" id="dob">
+        <p class="text">Mã sinh viên</p>
+        <input type="text" id="studentId" placeholder="Ví dụ: B21DCCN123">
+        <p class="text">Lớp</p>
+        <input type="text" id="class" placeholder="Ví dụ: CN12">
+        <button onclick="showQuestions()">Bắt đầu thi</button>
+    </div>
+    <div id="questionSection" style="display:none;">
+        <!-- Câu hỏi sẽ được thêm vào đây bằng JavaScript -->
+    </div>
+    <button id="submitButton" style="display:none;">Nộp bài</button>
+    <div id="resultSection" style="display:none;"></div>
+    <script src="script.js"></script>
+</body>
+</html>
